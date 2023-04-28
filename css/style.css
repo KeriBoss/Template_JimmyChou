@@ -11105,6 +11105,7 @@ textarea.form-control {
   transition: all .2s;
 }
 .btn-payment:hover{
+  color: var(--white);
   outline-color: var(--main);
   outline-offset: 3px;
   outline-style: solid;
@@ -11191,9 +11192,51 @@ textarea.form-control {
 .country .group-country .item{
   padding: 10px 15px;
   background-color: var(--bg-gray);
+  color: var(--dark);
   border: 1px solid #ddd;
   border-radius: 5px;
   gap: 5px;
   justify-content: center;
   align-items: center;
+}
+.news-content .item p{
+  margin: 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: .9rem;
+}
+.news-content .item p b{
+  font-size: 1rem;
+}
+.news-content .item p span{
+  color: var(--gray);
+}
+.btn-more{
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transform: translateX(10px);
+  transition: all .2s;
+}
+.btn-more:is(:hover, :focus){
+  color: var(--white);
+  transform: translateX(0px);
+}
+/*------------------------Detail News------------------------*/
+.news-detail{
+  color: var(--dark);
+}
+.news-detail .title{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.news-detail p b{
+  font-size: 1rem;
+}
+.news-detail p span{
+  font-size: .9rem;
+}
+.news-detail p b.line-hign{
+  background-color: var(--main);
 }
